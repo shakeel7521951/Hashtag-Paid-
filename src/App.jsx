@@ -8,7 +8,8 @@ import Brands from "./pages/Brands";
 import Creators from "./pages/Creators";
 
 const MainLayout = () => (
-  <div className="lg:mx-auto lg:max-w-7xl">
+  // className="lg:mx-auto lg:max-w-7xl"
+  <div >
     <Navbar />
     <Outlet />
     <Footer />
