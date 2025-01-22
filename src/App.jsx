@@ -4,11 +4,11 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Brands from "./pages/Brands";
+import Brands from "./pages/Brands"; 
 import Creators from "./pages/Creators";
 
 const MainLayout = () => (
-  <div className="px-4 lg:mx-auto lg:max-w-7xl">
+  <div className="lg:mx-auto lg:max-w-7xl">
     <Navbar />
     <Outlet />
     <Footer />
