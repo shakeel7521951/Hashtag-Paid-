@@ -63,13 +63,14 @@ const Section1 = () => {
                 University
               </h3>
             </div>
-            <div className="img rounded-b-3xl mt-6 overflow-hidden md:max-h-52 md:min-h-52 ">
+            <div className="img rounded-b-3xl mt-6 overflow-hidden md:h-52 md:w-full flex justify-center items-center">
               <img
-                className="rounded-3xl md:h-full"
+                className="rounded-3xl object-cover object-center h-auto w-auto min-w-full min-h-full"
                 src="/src/assets/education/img-1.png"
                 alt="not found"
               />
             </div>
+
             <div className="para mt-4 text-[1rem] font-customLight cursor-pointer flex items-center gap-2">
               <h3>Read</h3>
               <FaArrowRight className="text-xl transition-transform duration-300 hover:translate-x-2 cursor-pointer" />
