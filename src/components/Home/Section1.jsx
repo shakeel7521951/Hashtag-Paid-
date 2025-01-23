@@ -4,14 +4,14 @@ const Section1 = () => {
   return (
     <div className="section-one mt-4">
       <div className="section-content">
-        <div className="badges flex justify-between items-center">
-          <div className="badge-1 text-xl font-bold cursor-pointer">
+        <div className="badges flex md:flex-row flex-col justify-between items-center">
+          <div className="badge-1 text-[1.125rem] font-bold cursor-pointer">
             Trusted by
           </div>
-          <div className="badge-2 text-xl font-bold cursor-pointer">
+          <div className="badge-2 text-[1.125rem] font-bold cursor-pointer">
             INFINITI
           </div>
-          <div className="badge-3 text-xl font-bold cursor-pointer">
+          <div className="badge-3 text-[1.125rem] font-bold cursor-pointer">
             SEPHORA
           </div>
           <div className="badge-4 cursor-pointer">
@@ -61,7 +61,7 @@ const Section1 = () => {
         <div className="section-text mt-4">
           <div className="flex flex-wrap">
             {" "}
-            <h2 class="font-bold mx-auto text-center text-4xl w-1/2">
+            <h2 className="font-bold md:mx-auto text-center md:text-4xl text-[2rem] md:w-1/2">
               Find creators and brands to collaborate with. It’s never been
               easier.
             </h2>

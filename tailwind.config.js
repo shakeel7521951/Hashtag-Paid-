@@ -8,7 +8,7 @@ export default {
     extend: {
       fontFamily: {
         custom: ['"Custom Font"', 'serif'],
-        customLight:["Custom Font light",'serif'] // Example with a different custom font
+        customLight: ["Custom Font light", 'serif'] // Example with a different custom font
       },
     },
   },

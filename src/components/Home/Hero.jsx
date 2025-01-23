@@ -4,13 +4,15 @@ const Hero = () => {
   return (
     <div className="font-customLight">
       <div className="hero-container text-xl ">
-        <div className="flex bg-[#f2f0eb] py-4 max-h-[120vh] rounded-b-[10%] overflow-hidden">
+        <div className="flex md:flex-row flex-col bg-[#f2f0eb] py-4 md:max-h-[120vh] rounded-b-3xl overflow-hidden">
           <div className="side-one flex flex-col space-y-8 p-4">
-            <div className="paragraph bg-white text-center px-0 rounded-full py-2 text-[#4e4eff]">
-              <div className="px-0">A marketplace for creators and brands</div>
+            <div className="paragraph bg-white text-center md:px-0 rounded-full py-2 text-[#4e4eff] px-4">
+              <div className="px-0 text-[1.125rem]">
+                A marketplace for creators and brands
+              </div>
             </div>
             <div className="heading flex flex-wrap">
-              <h1 className="hero-heading-home-h1 text-8xl font-bold">
+              <h1 className="hero-heading-home-h1 md:text-8xl text-[3rem] font-bold text-center tracking-[-.12rem] leading-[100%]">
                 Creators and brands meet here
               </h1>
             </div>
@@ -22,7 +24,7 @@ const Hero = () => {
 
             <div className="btn">
               <div className="button-group text-sm bg-black text-white rounded-full text-center py-4 max-w-[10rem]">
-                <a href="/create-account">Get Started</a>
+                <a href="#">Get Started</a>
               </div>
             </div>
             <div className="btn-pic">
