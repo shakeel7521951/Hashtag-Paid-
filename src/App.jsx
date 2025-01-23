@@ -4,7 +4,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Brands from "./pages/Brands"; 
+import Brands from "./pages/Brands";
 import Creators from "./pages/Creators";
 
 const MainLayout = () => (
