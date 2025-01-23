@@ -8,7 +8,7 @@ const Footer = () => {
       <h1 className="bg-white text-black flex py-9 px-9 justify-center items-center rounded-[40%] text-6xl font-bold w-12 h-12">#</h1>
       {/* 5 Columns */}
       <div className="flex justify-center items-center mt-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 b">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 b">
           {/* Column 1 */}
           <div>
             <h3 className="text-xl font-semibold text-white mb-4">Why #paid</h3>
@@ -81,30 +81,30 @@ const Footer = () => {
         </div>
 
         {/* Column 5 - Featured Card */}
-        <div>
-          <div className="bg-white text-black p-6 rounded-[8%] shadow-md md:w-[30vw] md:h-[32vw] hover:bg-[#e4dada]">
-            <h3 className="text-md text-gray-400 font-semibold mb-2 text-start">COUNTRY HARVEST</h3>
-            <p className="text-start font-bold mb-4">
-              How Counter Harvest became a fan favourite for bread lovers.
-            </p>
-            <div className="flex justify-center">
-              <img
-                src="/src/assets/Footer/fotter1.avif"
-                alt="Featured"
-                className="w-full h-64 rounded-[10%] mb-4 object-cover "
-              />
-            </div>
-            <div className="text-center">
-              <Link
-                to={'/featured'}
-                className="font-medium flex items-center justify-start hover:underline "
-              >
-                Read <BsArrowRight className="ml-2" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
+        <div className="hidden lg:block">
+  <div className="bg-white text-black p-6 rounded-[8%] shadow-md md:w-[30vw] md:h-[35vw] hover:bg-[#e4dada]">
+    <h3 className="text-md text-gray-400 font-semibold mb-2 text-start">COUNTRY HARVEST</h3>
+    <p className="text-start font-bold mb-4">
+      How Counter Harvest became a fan favourite for bread lovers.
+    </p>
+    <div className="flex justify-center">
+      <img
+        src="/src/assets/Footer/fotter1.avif"
+        alt="Featured"
+        className="w-full h-64 rounded-[10%] mb-4 object-cover"
+      />
+    </div>
+    <div className="text-center">
+      <Link
+        to={'/featured'}
+        className="font-medium flex items-center justify-start"
+      >
+        Read <BsArrowRight className="ml-2" />
+      </Link>
+    </div>
+  </div>
+</div>
+</div>
 
       {/* Row of Images */}
 <div className="mt-10 flex flex-wrap gap-3 justify-start items-center">
@@ -125,26 +125,27 @@ const Footer = () => {
   </div>
 </div>
 
-<div className="mt-10 flex justify-between items-center text-sm text-white">
-    {/* Copyright */}
-    <div>© 2025 Hashtag Paid Inc.</div>
-    
-    {/* City Names */}
-    <div className="flex space-x-4">
-      <span>New York</span>
-      <span>Toronto</span>
-      <span>Chicago</span>
-      <span>Los Angeles</span>
-      <span>Miami</span>
-    </div>
-    
-    {/* Links */}
-    <div className="flex space-x-4">
-      <Link to={'/privacy'} className="text-white hover:text-gray-300 transition">Privacy Policy</Link>
-      <Link to={'/help'} className="text-white hover:text-gray-300 transition">Help Center</Link>
-      <Link to={'/terms'} className="text-white hover:text-gray-300 transition">Terms</Link>
-    </div>
+<div className="mt-10 flex flex-col md:flex-row justify-between items-center text-sm text-white space-y-4 md:space-y-0">
+  {/* Copyright */}
+  <div className="text-center md:text-left">© 2025 Hashtag Paid Inc.</div>
+  
+  {/* City Names */}
+  <div className="flex flex-wrap justify-center md:justify-start space-x-4 space-y-2 md:space-y-0 text-center">
+    <span className="max-md:mt-2">New York</span>
+    <span>Toronto</span>
+    <span>Chicago</span>
+    <span>Los Angeles</span>
+    <span>Miami</span>
   </div>
+  
+  {/* Links */}
+  <div className="flex flex-wrap justify-center md:justify-end space-x-4">
+    <Link to={'/privacy'} className="text-white hover:text-gray-300 transition">Privacy Policy</Link>
+    <Link to={'/help'} className="text-white hover:text-gray-300 transition">Help Center</Link>
+    <Link to={'/terms'} className="text-white hover:text-gray-300 transition">Terms</Link>
+  </div>
+</div>
+
 
     </footer>
   );

@@ -2,25 +2,55 @@ import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import BrandsComponent from "./BrandsComponent";
+import CreatorsComponent from "./CreatorsComponent";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showBrand, setShowBrand] = useState(false);
+  const [showCreator, setShowCreator] = useState(false);
 
   return (
     <nav className="bg-[#F2F0EB] p-4">
       <div className="container mx-auto flex items-center justify-between p-3 py-0">
         {/* Title Section */}
-        <Link to="/" className="text-3xl font-bold text-gray-700">#paid</Link>
+        <Link to="/" className="text-3xl font-bold text-gray-700">
+          #paid
+        </Link>
 
         {/* Centered Links for Desktop */}
         <div className="hidden md:flex items-center space-x-4 text-lg font-semibold">
-          <Link to="/brands" className="hover:text-yellow-700 transition">
-            Brands
-          </Link>
+
+          <div
+            className="relative flex justify-center"
+            onMouseEnter={() => setShowBrand(true)}
+            onMouseLeave={() => setShowBrand(false)}
+          >
+            <Link to="/brands" className="hover:text-yellow-700 transition">
+              Brands
+            </Link>
+            {showBrand && (
+              <div className="absolute mt-8 z-50 w-[75rem] left-[10.50rem] transform -translate-x-1/2 transition-transform duration-300">
+                <BrandsComponent />
+              </div>
+            )}
+          </div>
+
           <span className="text-gray-500">•</span>
-          <Link to="/creators" className="hover:text-yellow-700 transition">
-            Creators
-          </Link>
+          <div
+            className="relative flex justify-center"
+            onMouseEnter={() => setShowCreator(true)}
+            onMouseLeave={() => setShowCreator(false)}
+          >
+            <Link to="/creators" className="hover:text-yellow-700 transition">
+              Creators
+            </Link>
+            {showCreator && (
+              <div className="absolute mt-8 z-50 w-[77rem] transition-transform duration-300">
+                <CreatorsComponent />
+              </div>
+            )}
+          </div>
         </div>
 
         {/* Buttons for Desktop */}
@@ -64,15 +94,56 @@ const Navbar = () => {
               className="text-lg font-semibold hover:text-yellow-700 transition"
               onClick={() => setMenuOpen(false)}
             >
+              Home
+            </Link>
+            <Link
+              to="/brands"
+              className="text-lg font-semibold hover:text-yellow-700 transition"
+              onClick={() => setMenuOpen(false)}
+            >
               Brands
             </Link>
-            <span className="text-gray-500">•</span>
             <Link
-              to="/"
+              to="/creators"
               className="text-lg font-semibold hover:text-yellow-700 transition"
               onClick={() => setMenuOpen(false)}
             >
               Creators
+            </Link>
+            <Link
+              to="/agencies"
+              className="text-lg font-semibold hover:text-yellow-700 transition"
+              onClick={() => setMenuOpen(false)}
+            >
+              Agencies
+            </Link>
+            <Link
+              to="/why-paid"
+              className="text-lg font-semibold hover:text-yellow-700 transition"
+              onClick={() => setMenuOpen(false)}
+            >
+              Why #paid
+            </Link>
+            <Link
+              to="/meet-the-creators"
+              className="text-lg font-semibold hover:text-yellow-700 transition"
+              onClick={() => setMenuOpen(false)}
+            >
+              Meet the Creators
+            </Link>
+            <Link
+              to="/case-studies"
+              className="text-lg font-semibold hover:text-yellow-700 transition"
+              onClick={() => setMenuOpen(false)}
+            >
+              Case Studies
+            </Link>
+            <Link
+              to="/help-center"
+              className="text-lg font-semibold hover:text-yellow-700 transition"
+              onClick={() => setMenuOpen(false)}
+            >
+              Help Center
             </Link>
             <Link
               to="/login"
