@@ -78,16 +78,16 @@ const Creators = () => {
     ];
 
     return (
-        <div className='bg-[#F2F0EB] flex w-full px-10 py-20' style={{minHeight:'100vh'}}>
-            <div className='w-[40%] sticky top-24'>
+        <div className='bg-[#F2F0EB] mt-7 rounded-[45px] flex flex-col sm:flex-row w-full px-3 mx-auto sm:px-10 py-20' style={{minHeight:'100vh'}}>
+            <div className='w-full sm:w-[40%] sm:sticky top-24 mx-auto'>
                 <h1 className='font-custom text-3xl sm:text-5xl'>Speakers</h1>
                 <p className='font-customLight my-4'>
                     Industry experts that have an in-depth understanding of creator marketing. These are the leaders you want to learn from!
                 </p>
             </div>
-            <div className='w-[80%] flex flex-row flex-wrap gap-5'>
+            <div className='w-full sm:w-[80%] flex flex-row flex-wrap gap-5'>
                 {creators.map((creator) => (
-                    <div key={creator.id} className='rounded-2xl relative bg-white p-4 w-fit h-fit'>
+                    <div key={creator.id} className='rounded-2xl mx-auto relative bg-white p-4 w-fit h-fit'>
                         <img src={creator.image} className='rounded-[40px] w-[300px]' alt={creator.name} />
                         <img src={creator.logo} className='absolute bottom-36 w-[70px] left-8 bg-white p-2 object-fit rounded-full' alt={`${creator.name} logo`} />
                         <h1 className='font-custom text-3xl'>{creator.name}</h1>
