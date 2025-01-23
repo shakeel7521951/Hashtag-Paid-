@@ -7,18 +7,18 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-100 p-4">
+    <nav className="bg-[#F2F0EB] p-4">
       <div className="container mx-auto flex items-center justify-between p-3 py-0">
         {/* Title Section */}
-        <h1 className="text-3xl font-bold text-gray-700">#paid</h1>
+        <Link to="/" className="text-3xl font-bold text-gray-700">#paid</Link>
 
         {/* Centered Links for Desktop */}
         <div className="hidden md:flex items-center space-x-4 text-lg font-semibold">
-          <Link to="/" className="hover:text-yellow-700 transition">
+          <Link to="/brands" className="hover:text-yellow-700 transition">
             Brands
           </Link>
           <span className="text-gray-500">•</span>
-          <Link to="/" className="hover:text-yellow-700 transition">
+          <Link to="/creators" className="hover:text-yellow-700 transition">
             Creators
           </Link>
         </div>

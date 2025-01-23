@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Brands from "./pages/Brands";
 import Creators from "./pages/Creators";
+import Education from "./pages/Education";
 
 const MainLayout = () => (
 
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/brands", element: <Brands /> },
       { path: "/creators", element: <Creators /> },
+      { path: "/education", element: <Education /> },
     ],
   },
   { path: "/login", element: <Login /> },
