@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Brands from "./pages/Brands";
 import Creators from "./pages/Creators";
 import Education from "./pages/Education";
+import CreatorMarketing from "./pages/CreatorMarketing";
 
 const MainLayout = () => (
 
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
       { path: "/brands", element: <Brands /> },
       { path: "/creators", element: <Creators /> },
       { path: "/education", element: <Education /> },
+      {path:"/creator-marketing-summit-north",element:<CreatorMarketing />},
     ],
   },
   { path: "/login", element: <Login /> },
