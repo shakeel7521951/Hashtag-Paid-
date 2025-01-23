@@ -14,7 +14,7 @@ const CreatorMarketing = () => {
         <SoldOut />
         <LastSection />
     </div>
-  )
-}
+  );
+};
 
-export default CreatorMarketing
+export default CreatorMarketing;

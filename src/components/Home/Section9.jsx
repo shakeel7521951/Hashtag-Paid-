@@ -7,7 +7,9 @@ const Section9 = () => {
         </h2>
       </div>
       <div className="btn">
-        <button className="bg-[#ffffff] hover:bg-[#eef0a0] font-bold rounded-3xl py-4 px-6">Get Started</button>
+        <button className="bg-[#ffffff] hover:bg-[#eef0a0] font-bold rounded-3xl py-4 px-6 transition duration-300 ease-in-out transform hover:shadow-lg">
+          Get Started
+        </button>
       </div>
     </div>
   );
