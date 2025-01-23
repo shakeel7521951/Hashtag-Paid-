@@ -6,10 +6,11 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Brands from "./pages/Brands";
 import Creators from "./pages/Creators";
+import Education from "./pages/Education";
 
 const MainLayout = () => (
-  // className="lg:mx-auto lg:max-w-7xl"
-  <div >
+
+  <div className="lg:mx-auto lg:max-w-7xl">
     <Navbar />
     <Outlet />
     <Footer />
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/brands", element: <Brands /> },
       { path: "/creators", element: <Creators /> },
+      { path: "/education", element: <Education /> },
     ],
   },
   { path: "/login", element: <Login /> },
