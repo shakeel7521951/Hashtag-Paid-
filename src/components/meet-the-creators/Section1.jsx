@@ -29,13 +29,13 @@ const Section1 = () => {
           </p>
         </div>
       </div>
-      <div className="m-10 w-[20rem] md:w-[48rem] lg:w-[73rem] h-[25rem] lg:h-[30rem] md:p-4 mt-[7rem]">
+      <div className="m-10 w-[20rem] md:w-[48rem] lg:w-[60rem] h-[25rem] lg:h-[30rem] md:p-4 mt-[7rem]">
         <video
           src="/src/assets/creators/65133a9f670011c945d927b6_MTC-LA-transcode.mp4"
           autoPlay
           loop
           muted
-          className="rounded-[3rem] w-[20rem] h-[25rem] md:w-[98rem] lg:w-[75rem] lg:h-[30rem] object-cover"
+          className="rounded-[3rem] w-[20rem] h-[25rem] md:w-[98rem] lg:w-[60rem] lg:h-[30rem] object-cover mx-auto"
         ></video>
       </div>
       <div className="mt-10">
