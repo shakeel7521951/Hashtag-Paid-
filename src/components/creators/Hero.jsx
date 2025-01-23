@@ -1,5 +1,3 @@
-import React from "react";
-
 const Hero = () => {
   return (
     <div className="bg-[#F2F0EB] h-fit flex justify-center items-center max-sm:flex-col pb-24 rounded-b-[5rem]">
@@ -18,7 +16,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="max-sm:text-center">
-          <button className="bg-black py-4 px-6 text-white rounded-full mt-10">
+          <button className="bg-black py-4 px-6 text-white rounded-full mt-10 hover:bg-slate-500 transition-all">
             Join For Free
           </button>
         </div>
