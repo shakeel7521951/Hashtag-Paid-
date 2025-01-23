@@ -8,9 +8,9 @@ import Brands from "./pages/Brands";
 import Creators from "./pages/Creators";
 import Education from "./pages/Education";
 import CreatorMarketing from "./pages/CreatorMarketing";
+import MeetTheCreators from "./pages/MeetTheCreators";
 
 const MainLayout = () => (
-
   <div className="lg:mx-auto lg:max-w-7xl">
     <Navbar />
     <Outlet />
@@ -25,8 +25,12 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/brands", element: <Brands /> },
       { path: "/creators", element: <Creators /> },
+      { path: "/meet-the-creators", element: <MeetTheCreators /> },
       { path: "/education", element: <Education /> },
-      {path:"/creator-marketing-summit-north",element:<CreatorMarketing />},
+      {
+        path: "/creator-marketing-summit-north",
+        element: <CreatorMarketing />,
+      },
     ],
   },
   { path: "/login", element: <Login /> },
