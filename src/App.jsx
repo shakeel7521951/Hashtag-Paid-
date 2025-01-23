@@ -9,7 +9,6 @@ import Creators from "./pages/Creators";
 import Education from "./pages/Education";
 
 const MainLayout = () => (
-
   <div className="lg:mx-auto lg:max-w-7xl">
     <Navbar />
     <Outlet />

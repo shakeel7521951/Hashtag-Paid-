@@ -45,7 +45,7 @@ const Section7 = () => {
               </div>
             </div>
           </div>
-          <div className="btn bg-[#ffffff] text-black md:p-4 p-2 rounded-full text-center md:max-w-32 cursor-pointer font-bold hover:bg-[#808080] ">
+          <div className="btn bg-[#ffffff] text-black md:p-4 p-2 rounded-full text-center md:max-w-32 cursor-pointer font-bold hover:bg-[#808080] transition duration-300 ease-in-out transform hover:shadow-lg">
             Learn More
           </div>
         </div>
