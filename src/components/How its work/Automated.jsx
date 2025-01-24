@@ -1,9 +1,18 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import automated from '../../assets/trusted/automated.webp'
 import { FaMinus, FaPlus } from "react-icons/fa";
+import { useLocation } from 'react-router-dom';
 
 export default function CreatorWork() {
     const [activeIndex, setActiveIndex] = useState(null);
+    const automateRef = useRef(null);
+    const location = useLocation();
+  
+    useEffect(() => {
+      if (location.hash === "#automate") {
+        automateRef.current?.scrollIntoView({ behavior: "smooth" });
+      }
+    }, [location.hash]);
 
     const authenticator = [
         { id: 1, plus: <FaPlus />, title: 'No need to haggle or negotiate', text: 'You have access to standardized pricing for content creation and usage rights so you’ll never have to negotiate with creators.' },
@@ -23,7 +32,7 @@ export default function CreatorWork() {
                         <img src={automated} alt="" className=' w-full h-full' />
                     </div>
                     <div className='w-full sm:w-[50%] max-h-full order-2 sm:order-2 '>
-                        <div className=" w-[200px] sm:w-[200px]  p-3 rounded-[30px] flex justify-center items-center bg-[#dde041]">
+                        <div id='#automate' ref={automateRef} className=" w-[200px] sm:w-[200px]  p-3 rounded-[30px] flex justify-center items-center bg-[#dde041]">
                             <span>Automated workflows</span>
                         </div>
 

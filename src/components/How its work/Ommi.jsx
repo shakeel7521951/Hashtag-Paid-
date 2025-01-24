@@ -1,9 +1,19 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Ommi from '../../assets/trusted/Ommi.webp'
 import { FaMinus, FaPlus } from "react-icons/fa";
+import { useLocation } from 'react-router-dom';
 
 export default function CreatorWork() {
     const [activeIndex, setActiveIndex] = useState(null);
+
+    const amplifyRef = useRef(null);
+    const location = useLocation();
+
+    useEffect(()=>{
+        if(location.hash === '#amplify'){
+            amplifyRef.current?.scrollIntoView({behavior:"smooth"});
+        }
+    },[location.hash]);
 
     const authenticator = [
         { id: 1, plus: <FaPlus />, title: 'Creator handle licensing', text: 'The contract and legal work you need to launch campaigns are integrated with the marketplace.' },
@@ -20,8 +30,8 @@ export default function CreatorWork() {
                     <div className="w-full sm:w-[50%] h-full order-1 sm:order-2">
                         <img src={Ommi} alt="" className=' w-full h-full' />
                     </div>
-                    <div className='w-full sm:w-[50%] max-h-full order-2 sm:order-1 flex justify-center flex-col'>
-                        <div className=" w-[200px] sm:w-[150px]  p-3 rounded-[30px] flex justify-center items-center bg-[#dde041]">
+                    <div id='#amplify' ref={amplifyRef} className='w-full sm:w-[50%] max-h-full order-2 sm:order-1 flex justify-center flex-col'>
+                        <div  className=" w-[200px] sm:w-[150px]  p-3 rounded-[30px] flex justify-center items-center bg-[#dde041]">
                             <span>Omni-channel</span>
                         </div>
 
