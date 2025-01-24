@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Brands from "./pages/Brands"; 
 import Creators from "./pages/Creators";
+import Howits from "./components/How its work/Howits";
+import Paid from "./components/How its work/Paid";
 
 const MainLayout = () => (
   <div className="lg:mx-auto lg:max-w-7xl">
@@ -22,6 +24,8 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/brands", element: <Brands /> },
       { path: "/creators", element: <Creators /> },
+      { path: "/how-it-works", element: <Howits /> },
+      {path:"/otterbox-symmetrys-creator-approved-phone-protection",element:<Paid/>}
     ],
   },
   { path: "/login", element: <Login /> },
