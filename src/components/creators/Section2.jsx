@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 
 const Section2 = () => {
+  const directorRef = useRef();
+  const location = useLocation();
+
+  useEffect(()=>{
+    if(location.hash === '#director'){
+      directorRef.current?.scrollIntoView({behavior:"smooth"});
+    }
+  },[location.hash]);
+
   return (
     <div>
       <div className="bg-[#F2F0EB] min-h-screen flex justify-center items-center max-sm:flex-col pb-24 rounded-b-[5rem] mt-10 gap-8 overflow-hidden">
         <div className="max-sm:w-full w-[45vw] pl-10 pb-1 max-sm:pl-2">
           <div className="bg-[#DDE041] mt-10 text-black font-customLight font-extralight max-sm:w-[40%] md:w-[80%] lg:w-[35%] text-center rounded-full px-2 py-2 text-nowrap">
-            <p>Creative Control</p>
+            <p id="#director" ref={directorRef}>Creative Control</p>
           </div>
           <div className="h-fit mt-7">
             <p className="font-custom max-sm:text-[2.4rem] max-sm:w-[85%] md:w-[95%] md:text-3xl lg:text-6xl  w-[70%] leading-none tracking-tight">

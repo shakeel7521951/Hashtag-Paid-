@@ -1,5 +1,3 @@
-import React from "react";
-
 const Marque = () => {
   return (
     <div className="mt-12 flex max-md:flex-col w-full md:items-center overflow-hidden">

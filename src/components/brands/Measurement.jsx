@@ -1,19 +1,29 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import measurement from "../../assets/brands/measurement.webp";
 import tick from "../../assets/brands/tick.svg";
+import { useLocation } from "react-router-dom";
 
 const Measurement = () => {
+   const analyticsRef = useRef(null);
+      const location = useLocation();
+    
+      useEffect(() => {
+        if (location.hash === "#analytics") {
+          analyticsRef.current?.scrollIntoView({ behavior: "smooth" });
+        }
+      }, [location.hash]);
+
   return (
     <div className="bg-black  w-full flex flex-col sm:flex-row px-6 my-8 sm:px-10 rounded-xl py-10 mx-auto sm:py-14 gap-6 sm:gap-10">
       <div className="w-full sm:w-[50%] order-1 sm:order-2">
         <img src={measurement} style={{height:"500px",width:"100%"}} alt="Quality content" />
       </div>
       <div className="w-full sm:w-[50%] text-white mt-5 order-2 sm:order-1">
-        <button className="py-2 px-3 bg-[#DDE041] text-black my-5 rounded-full">
-          Quality Content
+        <button id="#analytics" ref={analyticsRef} className="py-2 px-3 bg-[#DDE041] text-black my-5 rounded-full">
+        Measurement
         </button>
         <h1 className="font-custom text-3xl sm:text-5xl">
-        Stop assuming what’s working
+        Stop assuming what’s working 
         </h1>
         <p className="font-customLight py-4">
         Keep a pulse on what’s resonating with your target audience and continue to optimize your creator marketing program.

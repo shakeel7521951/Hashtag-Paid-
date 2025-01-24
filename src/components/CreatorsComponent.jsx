@@ -1,12 +1,9 @@
-import React from "react";
-import { BsArrowRight } from 'react-icons/bs';
-import { Link } from 'react-router-dom';
+import { BsArrowRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const CreatorsComponent = () => {
   return (
     <div className="bg-[#f2f0eb] py-5 px-5 mt-2 rounded-[2%] ms-20  shadow-lg">
-
-
       {/* 5 Columns */}
       <div className="flex justify-center items-center mt-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
@@ -14,26 +11,30 @@ const CreatorsComponent = () => {
           <div>
             <ul className="space-y-1">
               <li>
-                <Link to="/" className="text-black text-xl font-bold text-nowrap">
+                <Link
+                  to="/"
+                  className="text-black text-xl font-bold text-nowrap"
+                >
                   How it Works
-                </Link></li>
+                </Link>
+              </li>
               <li className="mt-3">
-                <Link to="/" className="text-[#878683] text-[12px]">
+                <Link to="/creators#collaborations" className="text-[#878683] text-[12px]">
                   Find collaborations
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-[#878683] text-[12px]">
+                <Link to="/creators#director" className="text-[#878683] text-[12px]">
                   Create content
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-[#878683] text-[12px]">
+                <Link to="/creators#automate" className="text-[#878683] text-[12px]">
                   Automate workflow
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-[#878683] text-[12px]">
+                <Link to="/creators#paid" className="text-[#878683] text-[12px]">
                   Get paid
                 </Link>
               </li>
@@ -42,7 +43,9 @@ const CreatorsComponent = () => {
 
           {/* Column 2 */}
           <div>
-            <h3 className="text-xl font-bold text-black mb-4 text-nowrap">Resources</h3>
+            <h3 className="text-xl font-bold text-black mb-4 text-nowrap">
+              Resources
+            </h3>
             <ul className="space-y-1">
               <li className="text-black font-bold text-[12px]">CONTENT</li>
               <li>
@@ -66,7 +69,9 @@ const CreatorsComponent = () => {
           {/* Column 3 */}
           <div>
             <ul className="space-y-1 mt-10">
-              <li className="text-black font-bold text-[12px] text-nowrap">HELP CENTER</li>
+              <li className="text-black font-bold text-[12px] text-nowrap">
+                HELP CENTER
+              </li>
               <li>
                 <Link to="/" className="text-[#878683] text-[12px]">
                   Getting started
@@ -100,22 +105,22 @@ const CreatorsComponent = () => {
             <ul className="space-y-1 mt-10 text-nowrap">
               <li className="text-black font-bold text-[12px]">EVENT</li>
               <li>
-                <Link to="/" className="text-[#878683] text-[12px]">
+                <Link to="/events" className="text-[#878683] text-[12px]">
                   Coming up
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-[#878683] text-[12px]">
+                <Link to="/events#on-demand" className="text-[#878683] text-[12px]">
                   On demand
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-[#878683] text-[12px]">
+                <Link to="/meet-the-creators" className="text-[#878683] text-[12px]">
                   Meet the creators
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-[#878683] text-[12px] ">
+                <Link to="/creator-marketing-summit-north" className="text-[#878683] text-[12px] ">
                   Creator Marketing Summit North
                 </Link>
               </li>
@@ -141,10 +146,7 @@ const CreatorsComponent = () => {
             Our AI principles are here—let’s make AI a force for good!
           </p>
           <div className=" flex text-center gap-3 items-center">
-            <Link
-              to={'/featured'}
-              className="font-medium  justify-start"
-            >
+            <Link to={"/featured"} className="font-medium  justify-start">
               Discover the principles
             </Link>
             <BsArrowRight className="text-2xl mt-1" />

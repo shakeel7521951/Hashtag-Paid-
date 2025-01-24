@@ -1,5 +1,4 @@
 import Hero from "../components/creators/Hero";
-import ImageSlider from "../components/creators/ImageSlider";
 import Marque from "../components/creators/Marque";
 import Section1 from "../components/creators/Section1";
 import Section2 from "../components/creators/Section2";
@@ -8,6 +7,7 @@ import Section4 from "../components/creators/Section4";
 import Section5 from "../components/creators/Section5";
 import Section6 from "../components/creators/Section6";
 import Section7 from "../components/creators/Section7";
+import ImageSlider from "../components/How its work/ImageSlider";
 
 const Creators = () => {
   return (
