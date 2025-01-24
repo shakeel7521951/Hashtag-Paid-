@@ -8,6 +8,7 @@ import Brands from "./pages/Brands";
 import Creators from "./pages/Creators";
 import Education from "./pages/Education";
 import CreatorMarketing from "./pages/CreatorMarketing";
+import MarketingSummit from "./pages/MarketingSummit";
 
 const MainLayout = () => (
   <div className="lg:mx-auto lg:max-w-7xl">
@@ -29,6 +30,7 @@ const router = createBrowserRouter([
         path: "/creator-marketing-summit-north",
         element: <CreatorMarketing />,
       },
+      { path: "/creator-marketing-summit", element: <MarketingSummit /> },
     ],
   },
   { path: "/login", element: <Login /> },

@@ -1,12 +1,12 @@
-import React from 'react'
-import Hero from '../components/creatorMarketing/Hero'
+import React from "react";
+import Hero from "../components/creatorMarketing/Hero";
 
 const CreatorMarketing = () => {
   return (
     <div>
-        <Hero />
+      <Hero />
     </div>
-  )
-}
+  );
+};
 
-export default CreatorMarketing
+export default CreatorMarketing;
