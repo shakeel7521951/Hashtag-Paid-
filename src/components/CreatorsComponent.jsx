@@ -134,7 +134,7 @@ const CreatorsComponent = () => {
         </div>
 
         {/* Column 5 - Featured Card */}
-        <div className="text-black ms-6 w-[300px]">
+        <Link to="/ai-principles" className="text-black ms-6 w-[300px]">
           <div className="flex justify-center">
             <img
               src="/src/assets/Navbar/navbar.avif"
@@ -151,7 +151,7 @@ const CreatorsComponent = () => {
             </Link>
             <BsArrowRight className="text-2xl mt-1" />
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );

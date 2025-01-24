@@ -11,6 +11,7 @@ import CreatorMarketing from "./pages/CreatorMarketing";
 import MeetTheCreators from "./pages/MeetTheCreators";
 import AiPrinciples from "./pages/AiPrinciples";
 import Event from "./pages/Event";
+import Howits from './components/How its work/Howits';
 
 const MainLayout = () => (
   <div className="lg:mx-auto lg:max-w-7xl">
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
       { path: "/meet-the-creators", element: <MeetTheCreators /> },
       { path: "/education", element: <Education /> },
       { path: "/events", element: <Event /> },
+      {path:"/how-it-works",element:<Howits />},
       {
         path: "/creator-marketing-summit-north",
         element: <CreatorMarketing />,
