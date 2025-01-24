@@ -1,9 +1,18 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import analytics from '../../assets/trusted/analytics.webp'
 import { FaMinus, FaPlus } from "react-icons/fa";
+import { useLocation } from 'react-router-dom';
 
 export default function CreatorWork() {
     const [activeIndex, setActiveIndex] = useState(null);
+    const measureRef = useRef(null);
+    const location = useLocation();
+  
+    useEffect(() => {
+      if (location.hash === "#measure") {
+        measureRef.current?.scrollIntoView({ behavior: "smooth" });
+      }
+    }, [location.hash]);
 
     const authenticator = [
         { id: 1, plus: <FaPlus />, title: 'Competitive benchmarking', text: 'Know how your campaign performs against industry norms, and other brands targeting the same audience.' },
@@ -20,7 +29,7 @@ export default function CreatorWork() {
             <div className=" w-full  bg-black  p-10 rounded-[50px]">
                 <div className=" w-[90%] mx-auto flex flex-col sm:flex-row md:flex-row gap-20 justify-around">
                 <div className='w-full sm:w-[50%] max-h-full order-2 sm:order-1 '>
-                        <div className=" w-[200px] sm:w-[300px]  p-3 rounded-[30px] flex justify-center items-center bg-[#dde041]">
+                        <div id='#measure' ref={measureRef} className=" w-[200px] sm:w-[300px]  p-3 rounded-[30px] flex justify-center items-center bg-[#dde041]">
                             <span>Analytics & reporting</span>
                         </div>
 

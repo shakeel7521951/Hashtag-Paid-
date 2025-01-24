@@ -15,10 +15,10 @@ const BrandsComponent = () => {
             <ul className="space-y-2 text-norap">
               <li><Link to='/' className="text-black text-xl font-bold">How it Works</Link></li>
               <li><Link to='/brands#match' className="text-[#878683] text-[12px]">Match with creators</Link></li>
-              <li><Link to='/' className="text-[#878683] text-[12px]">Manage your campaign</Link></li>
-              <li><Link to='/' className="text-[#878683] text-[12px]">Measure your campaign</Link></li>
-              <li><Link to='/' className="text-[#878683] text-[12px]">Automate your workflow</Link></li>
-              <li><Link to='/' className="text-[#878683] text-[12px]">Amplify your content</Link></li>
+              <li><Link to='/how-it-works#manage' className="text-[#878683] text-[12px]">Manage your campaign</Link></li>
+              <li><Link to='/how-it-works#measure' className="text-[#878683] text-[12px]">Measure your campaign</Link></li>
+              <li><Link to='/how-it-works#automate' className="text-[#878683] text-[12px]">Automate your workflow</Link></li>
+              <li><Link to='/how-it-works#amplify' className="text-[#878683] text-[12px]">Amplify your content</Link></li>
               <li><Link to='/' className="text-black text-[12px] font-bold">TEAMS</Link></li>
               <li><Link to='/brands' className="text-[#878683] text-[12px]">Marketers</Link></li>
               <li><Link to='/' className="text-[#878683] text-[12px]">Agencies</Link></li>
