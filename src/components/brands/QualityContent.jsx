@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import qualityContent from "../../assets/brands/qualityContent.webp";
 import tick from "../../assets/brands/tick.svg";
+import { useLocation } from "react-router-dom";
 
 const QualityContent = () => {
+  const createRef = useRef();
+  const location = useLocation();
+
+  useEffect(()=>{
+    if(location.hash === '#create'){
+      createRef.current?.scrollIntoView({behavior:"smooth"});
+    }
+  },[location.hash]);
+
   return (
     <div className="bg-black  w-full flex flex-col sm:flex-row px-6 sm:px-10 rounded-xl py-10 mx-auto sm:py-14 gap-6 sm:gap-10">
       <div className="w-full sm:w-[50%]">
         <img src={qualityContent} style={{height:"500px",width:"90%"}} alt="Quality content" />
       </div>
       <div className="w-full sm:w-[50%] text-white mt-5">
-        <button className="py-2 px-3 bg-[#DDE041] text-black my-5 rounded-full">
+        <button id="#create" ref={createRef} className="py-2 px-3 bg-[#DDE041] text-black my-5 rounded-full">
           Quality Content
         </button>
         <h1 className="font-custom text-3xl sm:text-5xl">

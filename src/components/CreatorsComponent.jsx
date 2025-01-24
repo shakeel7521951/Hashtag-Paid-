@@ -18,22 +18,22 @@ const CreatorsComponent = () => {
                   How it Works
                 </Link></li>
               <li className="mt-3">
-                <Link to="/" className="text-[#878683] text-[12px]">
+                <Link to="/creators#collaborations" className="text-[#878683] text-[12px]">
                   Find collaborations
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-[#878683] text-[12px]">
+                <Link to="/creators#director" className="text-[#878683] text-[12px]">
                   Create content
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-[#878683] text-[12px]">
+                <Link to="/creators#automate" className="text-[#878683] text-[12px]">
                   Automate workflow
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-[#878683] text-[12px]">
+                <Link to="/creators#paid" className="text-[#878683] text-[12px]">
                   Get paid
                 </Link>
               </li>
@@ -100,22 +100,22 @@ const CreatorsComponent = () => {
             <ul className="space-y-1 mt-10 text-nowrap">
               <li className="text-black font-bold text-[12px]">EVENT</li>
               <li>
-                <Link to="/" className="text-[#878683] text-[12px]">
+                <Link to="/events" className="text-[#878683] text-[12px]">
                   Coming up
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-[#878683] text-[12px]">
+                <Link to="/events#on-demand" className="text-[#878683] text-[12px]">
                   On demand
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-[#878683] text-[12px]">
+                <Link to="/meet-the-creators" className="text-[#878683] text-[12px]">
                   Meet the creators
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-[#878683] text-[12px] ">
+                <Link to="/creator-marketing-summit-north" className="text-[#878683] text-[12px] ">
                   Creator Marketing Summit North
                 </Link>
               </li>
