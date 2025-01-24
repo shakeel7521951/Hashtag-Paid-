@@ -9,6 +9,8 @@ import Creators from "./pages/Creators";
 import Education from "./pages/Education";
 import CreatorMarketing from "./pages/CreatorMarketing";
 import MeetTheCreators from "./pages/MeetTheCreators";
+import AiPrinciples from "./pages/AiPrinciples";
+import Event from "./pages/Event";
 
 const MainLayout = () => (
   <div className="lg:mx-auto lg:max-w-7xl">
