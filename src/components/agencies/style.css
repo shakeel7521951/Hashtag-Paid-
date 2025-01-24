@@ -1,0 +1,32 @@
+.marquee-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .marquee {
+    display: flex;
+    animation: scroll 6s linear infinite;
+  }
+  
+  .marquee svg {
+    flex-shrink: 0;
+  }
+  
+  /* Marquee animation */
+  @keyframes scroll {
+    0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+  }
+  
+  /* Disable marquee on larger devices */
+  @media (min-width: 640px) {
+    .marquee {
+      animation: none;
+    }
+  }
+  
