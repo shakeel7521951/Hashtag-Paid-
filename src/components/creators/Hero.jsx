@@ -1,8 +1,6 @@
-import React from "react";
-
 const Hero = () => {
   return (
-    <div className="bg-[#F2F0EB] h-fit flex justify-center items-center max-sm:flex-col">
+    <div className="bg-[#F2F0EB] h-fit flex justify-center items-center max-sm:flex-col pb-24 rounded-b-[5rem]">
       <div className="min-h-screen max-sm:w-full w-[50vw] max-sm:pl-0 pl-12">
         <div className="bg-white mt-10 text-blue-600 font-customLight font-semibold max-sm:w-[80%] max-sm:mx-auto md:w-[80%] lg:w-[50%] text-center rounded-full p-3">
           <p>#paid for creators and agents</p>
@@ -18,7 +16,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="max-sm:text-center">
-          <button className="bg-black py-4 px-6 text-white rounded-full mt-10">
+          <button className="bg-black py-4 px-6 text-white rounded-full mt-10 hover:bg-slate-500 transition-all">
             Join For Free
           </button>
         </div>
@@ -39,7 +37,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="h-screen max-sm:h-fit max-sm:w-[80%] max-sm:text-center max-sm:my-10 w-[50vw] md:mt-20">
+      <div className="h-screen max-sm:h-fit max-sm:w-[80%] max-sm:text-center max-sm:my-10 w-[50vw] md:mt-20 ">
         <img
           src="/src/assets/creators/651cbb740ed53928483e173d_creators-hero_1_5x.webp"
           alt=""

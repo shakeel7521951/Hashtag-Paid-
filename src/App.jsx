@@ -4,10 +4,12 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Brands from "./pages/Brands"; 
+import Brands from "./pages/Brands";
 import Creators from "./pages/Creators";
-import Howits from "./components/How its work/Howits";
-import Paid from "./components/How its work/Paid";
+import Education from "./pages/Education";
+import CreatorMarketing from "./pages/CreatorMarketing";
+import MeetTheCreators from "./pages/MeetTheCreators";
+import Event from './pages/Event';
 
 const MainLayout = () => (
   <div className="lg:mx-auto lg:max-w-7xl">
@@ -24,8 +26,13 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/brands", element: <Brands /> },
       { path: "/creators", element: <Creators /> },
-      { path: "/how-it-works", element: <Howits /> },
-      {path:"/otterbox-symmetrys-creator-approved-phone-protection",element:<Paid/>}
+      { path: "/meet-the-creators", element: <MeetTheCreators /> },
+      { path: "/education", element: <Education /> },
+      {path:"/events", element:<Event />},
+      {
+        path: "/creator-marketing-summit-north",
+        element: <CreatorMarketing />,
+      },
     ],
   },
   { path: "/login", element: <Login /> },

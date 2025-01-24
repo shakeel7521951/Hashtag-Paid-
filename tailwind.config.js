@@ -7,13 +7,18 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        custom: ['"Custom Font"', 'serif'], // Define your custom font
-        customLight: ['"Custom Font Light"', 'serif'], // Define a light variant
+        custom: ['"Custom Font"', 'serif'],
+        customLight: ["Custom Font light", 'serif'] // Example with a different custom font
       },
-      // You can add more customizations here, like colors or spacing
-      colors: {
-        customGray: '#f5f5f5', // Example of a custom color
-        customDark: '#333333', // Another custom color
+      // Adding animation for card effect on main landing page:
+      animation: {
+        "fade-in": "fade-in 0.5s ease-in-out",
+      },
+      keyframes: {
+        "fade-in": {
+          "0%": { opacity: 0, transform: "translateY(10px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
       },
     },
   },
