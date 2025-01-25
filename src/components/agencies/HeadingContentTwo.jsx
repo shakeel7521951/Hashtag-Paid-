@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const HeadingContentTwo = () => {
   return (
-    <div className="flex items-center justify-center py-14 sm:min-h-screen mb-7 bg-[#dde041] rounded-3xl sm:mt-[40px]">
+    <div className="flex items-center justify-center py-14 sm:min-h-screen bg-[#dde041] rounded-3xl sm:mt-[40px]">
       <div className="text-center px-6">
         {/* Main Heading */}
         <h1 className="text-xl md:text-4xl font-bold sm:w-[800px]">

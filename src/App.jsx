@@ -9,6 +9,7 @@ import Education from "./pages/Education";
 import CreatorMarketing from "./pages/CreatorMarketing";
 import MeetTheCreators from "./pages/MeetTheCreators";
 import AiPrinciples from "./pages/AiPrinciples";
+import Agencies from "./pages/Agencies";
 import Event from "./pages/Event";
 import Howits from "./components/How its work/Howits";
 import Agencies from "./pages/Agencies";
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "/creator-marketing-summit-north",
         element: <CreatorMarketing />,
+      },
+      {
+        path: "/agencies",
+        element: <Agencies />,
       },
       {
         path: "/ai-principles",
