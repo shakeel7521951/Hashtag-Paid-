@@ -1,10 +1,5 @@
 const Login = () => {
   return (
-<<<<<<< HEAD
-    <div>Login</div>
-  )
-}
-=======
     <div className="w-full h-screen flex justify-center">
       <div className="h-full w-full lg:w-1/3 pt-40 flex flex-col items-center">
         <p className="pl-8 text-[2.4rem] lg:w-[80%]">Login To Your Account</p>
@@ -31,6 +26,4 @@ const Login = () => {
     </div>
   );
 };
->>>>>>> 1938b80281c5ae4086e6451f420fad0411f4f7ce
-
 export default Login;

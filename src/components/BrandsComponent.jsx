@@ -69,11 +69,11 @@ const BrandsComponent = () => {
               <li><Link to="/creator-marketing-summit" className="text-[#878683] text-[12px]">Creator Marketing Summit</Link></li>
               <li><Link to='/' className="text-black font-bold text-[12px]">CASE STUDIES</Link></li>
               <li><Link to='/education' className="text-[#878683] text-[12px]">Education</Link></li>
-              <li><Link to='/' className="text-[#878683] text-[12px]">Tech</Link></li>
-              <li><Link to='/' className="text-[#878683] text-[12px]">Food & beverage</Link></li>
-              <li><Link to='/' className="text-[#878683] text-[12px]">CPG</Link></li>
-              <li><Link to='/' className="text-[#878683] text-[12px]">Beauty</Link></li>
-              <li><Link to='/' className="text-[#878683] text-[12px]">Home</Link></li>
+              <li><Link to='/education#Tech' className="text-[#878683] text-[12px]">Tech</Link></li>
+              <li><Link to='/education#Food & Beverage' className="text-[#878683] text-[12px]">Food & beverage</Link></li>
+              <li><Link to='/education#CPG' className="text-[#878683] text-[12px]">CPG</Link></li>
+              <li><Link to='/education#Beauty' className="text-[#878683] text-[12px]">Beauty</Link></li>
+              <li><Link to='/education#Home' className="text-[#878683] text-[12px]">Home</Link></li>
             </ul>
           </div>
         </div>
