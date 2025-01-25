@@ -1,5 +1,3 @@
-import React from "react";
-
 const Login = () => {
   return (
     <div className="w-full h-screen flex justify-center">
@@ -10,12 +8,12 @@ const Login = () => {
           placeholder="Email"
           name=""
           id=""
-          className="ml-8 w-[50%] lg:w-[80%] h-[2.5rem] mt-4 p-2 rounded-[4px] border border-gray-400"
+          className="w-[80%] md:w-[50%] lg:w-[80%] h-[2.5rem] mt-4 p-2 rounded-[4px] border border-gray-400"
         />
-        <button className="mt-4 bg-[#ee2a57] w-[50%] lg:w-[80%] ml-8 p-3 rounded-[4px] text-white">
+        <button className="mt-4 bg-[#ee2a57] w-[80%] md:w-[50%] lg:w-[80%] p-3 rounded-[4px] text-white">
           Continue
         </button>
-        <span className="ml-8 mt-2 text-gray-600">
+        <span className=" mt-2 text-gray-600">
           Don't have an account yet?{" "}
           <a href="" className="underline">
             Signup Here
