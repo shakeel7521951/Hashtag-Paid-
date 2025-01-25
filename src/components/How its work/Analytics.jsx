@@ -7,11 +7,11 @@ export default function CreatorWork() {
     const [activeIndex, setActiveIndex] = useState(null);
     const measureRef = useRef(null);
     const location = useLocation();
-  
+
     useEffect(() => {
-      if (location.hash === "#measure") {
-        measureRef.current?.scrollIntoView({ behavior: "smooth" });
-      }
+        if (location.hash === "#measure") {
+            measureRef.current?.scrollIntoView({ behavior: "smooth" });
+        }
     }, [location.hash]);
 
     const authenticator = [
@@ -28,7 +28,7 @@ export default function CreatorWork() {
         <div>
             <div className=" w-full  bg-black  p-10 rounded-[50px]">
                 <div className=" w-[90%] mx-auto flex flex-col sm:flex-row md:flex-row gap-20 justify-around">
-                <div className='w-full sm:w-[50%] max-h-full order-2 sm:order-1 '>
+                    <div className='w-full sm:w-[50%] max-h-full order-2 sm:order-1 '>
                         <div id='#measure' ref={measureRef} className=" w-[200px] sm:w-[300px]  p-3 rounded-[30px] flex justify-center items-center bg-[#dde041]">
                             <span>Analytics & reporting</span>
                         </div>
@@ -38,7 +38,7 @@ export default function CreatorWork() {
 
                         <div className=" md:text-xl text-xl md:flex gap-1 ">
                             <div className="text-2xl sm:text-5xl md:text-6xl font-bold font-custom-[Mona Sans Extended, sans-serif] text-white">
-                            Learn insights about your audience
+                                Learn insights about your audience
                             </div>
 
                         </div>
@@ -77,7 +77,7 @@ export default function CreatorWork() {
                     <div className="w-full sm:w-[50%] h-full order-1 sm:order-2">
                         <img src={analytics} alt="" className=' w-full h-full' />
                     </div>
-                    
+
                 </div>
 
 

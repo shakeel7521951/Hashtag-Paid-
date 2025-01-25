@@ -21,7 +21,7 @@ const BrandsComponent = () => {
               <li><Link to='/how-it-works#amplify' className="text-[#878683] text-[12px]">Amplify your content</Link></li>
               <li><Link to='/' className="text-black text-[12px] font-bold">TEAMS</Link></li>
               <li><Link to='/brands' className="text-[#878683] text-[12px]">Marketers</Link></li>
-              <li><Link to='/' className="text-[#878683] text-[12px]">Agencies</Link></li>
+              <li><Link to='/agencies' className="text-[#878683] text-[12px]">Agencies</Link></li>
             </ul>
           </div>
 
@@ -44,17 +44,17 @@ const BrandsComponent = () => {
             <ul className="space-y-2 text-norap">
               <li className="text-black font-bold mt-3 text-[12px]">CONTENT</li>
               <li><Link to='/' className="text-[#878683] text-[12px]">Banknotes</Link></li>
-              <li><Link to='/' className="text-[#878683] text-[12px]">Creator culture podcast</Link></li>
-              <li><Link to='/' className="text-[#878683] text-[12px]">DTC growth podcast</Link></li>
+              <li><Link to='/pod-cast' className="text-[#878683] text-[12px]">Creator culture podcast</Link></li>
+              <li><Link to='/pod-cast' className="text-[#878683] text-[12px]">DTC growth podcast</Link></li>
             </ul>
             <ul className="space-y-1 mt-4 text-norap">
               <li className="text-black font-bold text-[12px]">HELP CENTER</li>
               <li className="text-[#878683] text-[12px]">Getting started</li>
-              <li><Link to='/' className="text-[#878683] text-[12px]">Choosing creators</Link></li>
-              <li><Link to='/' className="text-[#878683] text-[12px]">Launching a campaign</Link></li>
-              <li><Link to='/' className="text-[#878683] text-[12px]">Managing campaigns</Link></li>
-              <li><Link to='/' className="text-[#878683] text-[12px]">Campaign results</Link></li>
-              <li><Link to='/' className="text-[#878683] text-[12px]">Creator licensing</Link></li>
+              <li><Link to='/help-center' className="text-[#878683] text-[12px]">Choosing creators</Link></li>
+              <li><Link to='/Opting-in-to-a-Campaign' className="text-[#878683] text-[12px]">Launching a campaign</Link></li>
+              <li><Link to='/collaborating-on-a-compaign' className="text-[#878683] text-[12px]">Managing campaigns</Link></li>
+              <li><Link to='/getting-paid' className="text-[#878683] text-[12px]">Campaign results</Link></li>
+              <li><Link to='/help-center' className="text-[#878683] text-[12px]">Creator licensing</Link></li>
             </ul>
           </div>
 
@@ -62,11 +62,11 @@ const BrandsComponent = () => {
           <div>
             <h3 className="text-black font-bold text-[12px] mt-[40px]">EVENTS</h3>
             <ul className="space-y-1 text-norap">
-              <li><Link to='/' className="text-[#878683] text-[12px]">Coming up</Link></li>
-              <li><Link to='/' className="text-[#878683] text-[12px]">On demand</Link></li>
-              <li><Link to='/' className="text-[#878683] text-[12px]">Meet the creators</Link></li>
-              <li><Link to={'/creator-marketing-summit-north'} className="text-[#878683] text-[12px]">Creator Marketing Summit North</Link></li>
-              <li className="text-[#878683] text-[12px]">Creator Marketing Summit</li>
+              <li><Link to='/events' className="text-[#878683] text-[12px]">Coming up</Link></li>
+              <li><Link to='/events#on-demand' className="text-[#878683] text-[12px]">On demand</Link></li>
+              <li><Link to='/meet-the-creators' className="text-[#878683] text-[12px]">Meet the creators</Link></li>
+              <li><Link to='/creator-marketing-summit-north' className="text-[#878683] text-[12px]">Creator Marketing Summit North</Link></li>
+              <li><Link to="/" className="text-[#878683] text-[12px]">Creator Marketing Summit</Link></li>
               <li><Link to='/' className="text-black font-bold text-[12px]">CASE STUDIES</Link></li>
               <li><Link to='/education' className="text-[#878683] text-[12px]">Education</Link></li>
               <li><Link to='/' className="text-[#878683] text-[12px]">Tech</Link></li>
@@ -79,7 +79,7 @@ const BrandsComponent = () => {
         </div>
 
         {/* Column 5 - Featured Card */}
-        <div className="text-black p-2 mb-36 w-[300px]">
+        <Link to="/ai-principles" className="text-black p-2 mb-36 w-[300px]">
           <div className="flex justify-center">
             <img
               src="/src/assets/Navbar/navbar.avif"
@@ -99,7 +99,7 @@ const BrandsComponent = () => {
             </Link>
             <BsArrowRight className="text-2xl mt-1" />
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );
