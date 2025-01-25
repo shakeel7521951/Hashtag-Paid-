@@ -19,6 +19,7 @@ import CollobratingCompaign from "./pages/help/CollobratingCompaign";
 import GettingPaid from "./pages/help/GettingPaid";
 import CreateAccount from "./pages/CreateAccount";
 import Podcast from "./pages/Podcast";
+import CreatorMarketingSmit from "./pages/CreatorMarketingSmit";
 
 const MainLayout = () => (
   <div className="lg:mx-auto lg:max-w-7xl">
@@ -57,9 +58,9 @@ const router = createBrowserRouter([
   { path: "/help-center", element: <HelpCenter /> },
   { path: "/connect-your-social-media", element: <ConnectSocialMedia /> },
   { path: "/Opting-in-to-a-Campaign", element: <OtingCompaign /> },
-  { path: "/collaborating-on-a-compaign", element: <CollobratingCompaign />},
+  { path: "/collaborating-on-a-compaign", element: <CollobratingCompaign /> },
   { path: "/getting-paid", element: <GettingPaid /> },
-  {path: '/pod-cast',element:<Podcast />},
+  { path: "/pod-cast", element: <Podcast /> },
   { path: "/login", element: <Login /> },
   { path: "/create-account", element: <CreateAccount /> },
 ]);
