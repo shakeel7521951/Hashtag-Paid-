@@ -63,7 +63,7 @@ const Navbar = () => {
             Log In .
           </Link>
           <Link
-            to="/get-started"
+            to="/create-account"
             className="px-6 py-3 bg-black text-white rounded-full flex items-center space-x-2 hover:bg-gray-600 transition"
           >
             <span>Get Started</span>

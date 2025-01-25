@@ -1,7 +1,6 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import Signup from "./pages/Signup";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Brands from "./pages/Brands";
@@ -11,13 +10,15 @@ import CreatorMarketing from "./pages/CreatorMarketing";
 import MeetTheCreators from "./pages/MeetTheCreators";
 import AiPrinciples from "./pages/AiPrinciples";
 import Event from "./pages/Event";
-import Howits from './components/How its work/Howits';
+import Howits from "./components/How its work/Howits";
 import Agencies from "./pages/Agencies";
 import HelpCenter from "./pages/help/HelpCenter";
-import ConnectSocialMedia from './pages/help/ConnectSocialMedia';
+import ConnectSocialMedia from "./pages/help/ConnectSocialMedia";
 import OtingCompaign from "./pages/help/OptingCompaign";
-import CollobratingCompaign from './pages/help/CollobratingCompaign';
+import CollobratingCompaign from "./pages/help/CollobratingCompaign";
 import GettingPaid from "./pages/help/GettingPaid";
+import GetStarted from "./components/HelpCenter/GetStarted";
+import CreateAccount from "./pages/CreateAccount";
 
 const MainLayout = () => (
   <div className="lg:mx-auto lg:max-w-7xl">
@@ -37,13 +38,8 @@ const router = createBrowserRouter([
       { path: "/meet-the-creators", element: <MeetTheCreators /> },
       { path: "/education", element: <Education /> },
       { path: "/events", element: <Event /> },
-      {path:"/how-it-works",element:<Howits />},
-      {path:"/agencies",element:<Agencies />},
-      {path:"/help-center",element:<HelpCenter />},
-      {path:"/connect-your-social-media",element:<ConnectSocialMedia />},
-      {path:'/Opting-in-to-a-Campaign',element:<OtingCompaign />},
-      {path:'/collaborating-on-a-compaign',element:<CollobratingCompaign />},
-      {path:'/getting-paid',element:<GettingPaid />},
+      { path: "/how-it-works", element: <Howits /> },
+      { path: "/agencies", element: <Agencies /> },
       {
         path: "/creator-marketing-summit-north",
         element: <CreatorMarketing />,
@@ -54,8 +50,16 @@ const router = createBrowserRouter([
       },
     ],
   },
+  { path: "/help-center", element: <HelpCenter /> },
+  { path: "/connect-your-social-media", element: <ConnectSocialMedia /> },
+  { path: "/Opting-in-to-a-Campaign", element: <OtingCompaign /> },
+  {
+    path: "/collaborating-on-a-compaign",
+    element: <CollobratingCompaign />,
+  },
+  { path: "/getting-paid", element: <GettingPaid /> },
   { path: "/login", element: <Login /> },
-  { path: "/signup", element: <Signup /> },
+  { path: "/create-account", element: <CreateAccount /> },
 ]);
 
 function App() {

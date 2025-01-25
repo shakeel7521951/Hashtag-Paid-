@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import companyLogo from "../../assets/logo.png";
 
 const CollobratingCompaign = () => {
   const helpCenter = [
@@ -18,6 +19,19 @@ const CollobratingCompaign = () => {
 
   return (
     <div className="mx-4 mt-6 mb-10">
+         <div className="sm:mx-6 justify-between flex">
+        <div>
+          <Link to="/" className="text-3xl font-bold text-gray-700">
+            <img src={companyLogo} width={"140px"} alt="Company" />
+          </Link>{" "}
+        </div>
+        <div>
+          <Link to="" className="hover:underline">
+            Submit a request
+          </Link>
+        </div>
+      </div>
+      <hr className="my-3" />
       <div className="flex flex-col sm:flex-row sm:justify-between items-center gap-4">
         <div className="flex gap-2 items-center text-sm">
           <Link to="/" className="hover:underline">so-likeable</Link>

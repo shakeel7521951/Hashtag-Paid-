@@ -1,7 +1,7 @@
 import icon from '../assets/icon.svg';
 import account from '../assets/Trusted/account.webp';
 
-export default function GetStarted() {
+export default function CreateAccount() {
     const brand = [
         {
             brand: "Brand or Agency",
@@ -24,7 +24,7 @@ export default function GetStarted() {
     ];
 
     return (
-        <div className="w-full bg-gray-50 py-8">
+        <div className="w-full h-[100vh] bg-gray-50 py-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-6">
                 {/* Join paid section */}
                 <div className="flex flex-col items-center">
