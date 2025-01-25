@@ -20,6 +20,7 @@ import GettingPaid from "./pages/help/GettingPaid";
 import CreateAccount from "./pages/CreateAccount";
 import Podcast from "./pages/Podcast";
 import CreatorMarketingSmit from './pages/CreatorMarketingSmit';
+import BankNotes from './pages/BankNotes';
 
 const MainLayout = () => (
   <div className="lg:mx-auto lg:max-w-7xl">
@@ -45,6 +46,7 @@ const router = createBrowserRouter([
       { path: "/events", element: <Event /> },
       { path: "/how-it-works", element: <Howits /> },
       { path: "/agencies", element: <Agencies /> },
+      {path: "/bank-notes",element:<BankNotes />},
       {
         path: "/creator-marketing-summit-north",
         element: <CreatorMarketing />,

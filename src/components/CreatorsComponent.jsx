@@ -49,7 +49,7 @@ const CreatorsComponent = () => {
             <ul className="space-y-1">
               <li className="text-black font-bold text-[12px]">CONTENT</li>
               <li>
-                <Link to="/" className="text-[#878683] text-[12px]">
+                <Link to="/bank-notes" className="text-[#878683] text-[12px]">
                   Banknotes
                 </Link>
               </li>

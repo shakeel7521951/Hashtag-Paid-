@@ -1,7 +1,10 @@
 import React from "react";
-import LeftElement from "./LeftElement";
-import MiddleElement from "./MiddleElement";
-import RightElement from "./RightElement";
+// import LeftElement from "./LeftElement";
+import LeftElement from '../BankNotes/LeftElement';
+// import MiddleElement from "./MiddleElement";
+import MiddleElement from '../BankNotes/MiddleElement';
+// import RightElement from "./RightElement";
+import RightElement from '../BankNotes/RightElement'
 
 const AppLayout = () => {
   return (

@@ -43,7 +43,7 @@ const BrandsComponent = () => {
             <h3 className="text-xl font-bold text-black mb-4 ">Resources</h3>
             <ul className="space-y-2 text-norap">
               <li className="text-black font-bold mt-3 text-[12px]">CONTENT</li>
-              <li><Link to='/' className="text-[#878683] text-[12px]">Banknotes</Link></li>
+              <li><Link to='/bank-notes' className="text-[#878683] text-[12px]">Banknotes</Link></li>
               <li><Link to='/pod-cast' className="text-[#878683] text-[12px]">Creator culture podcast</Link></li>
               <li><Link to='/pod-cast' className="text-[#878683] text-[12px]">DTC growth podcast</Link></li>
             </ul>

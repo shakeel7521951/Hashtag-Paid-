@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../../shared/Card";
+import Card from "../../components/BankNotes/shared/Card";
 import image from "../../assets/applayout Images/left.jpg";
 import image1 from "../../assets/applayout Images/left2.jpg";
 
