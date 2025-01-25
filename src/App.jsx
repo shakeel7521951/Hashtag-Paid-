@@ -9,7 +9,7 @@ import Education from "./pages/Education";
 import CreatorMarketing from "./pages/CreatorMarketing";
 import MeetTheCreators from "./pages/MeetTheCreators";
 import AiPrinciples from "./pages/AiPrinciples";
-import Agencies from "./pages/Agencies";
+import Agencies from "./pages/Agencies.jsx";
 import Event from "./pages/Event";
 import Howits from "./components/How its work/Howits";
 import HelpCenter from "./pages/help/HelpCenter";

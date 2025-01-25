@@ -12,7 +12,8 @@ import siera from '../../assets/agencies/siera.webp'
 import women from '../../assets/agencies/women.avif'
 import wendy from '../../assets/agencies/wendy.avif'
 import timu from '../../assets/agencies/timu.avif'
-import '../../components/agencies/ImageSlider.css'
+// import '../../components/agencies/ImageSlider.css'
+
 export default function ImageSlider() {
     const imagesslider = [
         {
