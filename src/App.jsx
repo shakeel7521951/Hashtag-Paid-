@@ -12,6 +12,7 @@ import MeetTheCreators from "./pages/MeetTheCreators";
 import Event from './pages/Event';
 import Howits from "./components/How its work/Howits";
 import Paid from './components/How its work/Paid';
+import GetStarted from "./pages/GetStarted";
 
 const MainLayout = () => (
   <div className="lg:mx-auto lg:max-w-7xl">
@@ -31,6 +32,7 @@ const router = createBrowserRouter([
       { path: "/meet-the-creators", element: <MeetTheCreators /> },
       { path: "/education", element: <Education /> },
       {path:"/events", element:<Event />},
+      {path:"/create-account", element:<GetStarted />},
       {path:"/how-it-works",element:<Howits/>},
       {path:"/otterbox-symmetrys-creator-approved-phone-protection",element:<Paid/>},
       {
