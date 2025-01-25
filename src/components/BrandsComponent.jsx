@@ -62,11 +62,11 @@ const BrandsComponent = () => {
           <div>
             <h3 className="text-black font-bold text-[12px] mt-[40px]">EVENTS</h3>
             <ul className="space-y-1 text-norap">
-              <li><Link to='/' className="text-[#878683] text-[12px]">Coming up</Link></li>
-              <li><Link to='/' className="text-[#878683] text-[12px]">On demand</Link></li>
+              <li><Link to='/events' className="text-[#878683] text-[12px]">Coming up</Link></li>
+              <li><Link to='/events#on-demand' className="text-[#878683] text-[12px]">On demand</Link></li>
               <li><Link to='/' className="text-[#878683] text-[12px]">Meet the creators</Link></li>
-              <li><Link to={'/creator-marketing-summit-north'} className="text-[#878683] text-[12px]">Creator Marketing Summit North</Link></li>
-              <li className="text-[#878683] text-[12px]">Creator Marketing Summit</li>
+              <li><Link to='/creator-marketing-summit-north' className="text-[#878683] text-[12px]">Creator Marketing Summit North</Link></li>
+              <li><Link to="/" className="text-[#878683] text-[12px]">Creator Marketing Summit</Link></li>
               <li><Link to='/' className="text-black font-bold text-[12px]">CASE STUDIES</Link></li>
               <li><Link to='/education' className="text-[#878683] text-[12px]">Education</Link></li>
               <li><Link to='/' className="text-[#878683] text-[12px]">Tech</Link></li>
@@ -79,7 +79,7 @@ const BrandsComponent = () => {
         </div>
 
         {/* Column 5 - Featured Card */}
-        <div className="text-black p-2 mb-36 w-[300px]">
+        <Link to="/ai-principles" className="text-black p-2 mb-36 w-[300px]">
           <div className="flex justify-center">
             <img
               src="/src/assets/Navbar/navbar.avif"
@@ -99,7 +99,7 @@ const BrandsComponent = () => {
             </Link>
             <BsArrowRight className="text-2xl mt-1" />
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );

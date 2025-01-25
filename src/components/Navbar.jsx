@@ -4,6 +4,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import BrandsComponent from "./BrandsComponent";
 import CreatorsComponent from "./CreatorsComponent";
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,7 +16,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between p-3 py-0">
         {/* Title Section */}
         <Link to="/" className="text-3xl font-bold text-gray-700">
-          #paid
+          <img src={logo} width={'140px'} alt="Company" />
         </Link>
 
         {/* Centered Links for Desktop */}
