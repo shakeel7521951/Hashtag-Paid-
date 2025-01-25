@@ -21,7 +21,7 @@ const BrandsComponent = () => {
               <li><Link to='/how-it-works#amplify' className="text-[#878683] text-[12px]">Amplify your content</Link></li>
               <li><Link to='/' className="text-black text-[12px] font-bold">TEAMS</Link></li>
               <li><Link to='/brands' className="text-[#878683] text-[12px]">Marketers</Link></li>
-              <li><Link to='/' className="text-[#878683] text-[12px]">Agencies</Link></li>
+              <li><Link to='/agencies' className="text-[#878683] text-[12px]">Agencies</Link></li>
             </ul>
           </div>
 

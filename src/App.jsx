@@ -12,7 +12,12 @@ import MeetTheCreators from "./pages/MeetTheCreators";
 import AiPrinciples from "./pages/AiPrinciples";
 import Event from "./pages/Event";
 import Howits from './components/How its work/Howits';
-import Podcast from "./pages/Podcast";
+import Agencies from "./pages/Agencies";
+import HelpCenter from "./pages/help/HelpCenter";
+import ConnectSocialMedia from './pages/help/ConnectSocialMedia';
+import OtingCompaign from "./pages/help/OptingCompaign";
+import CollobratingCompaign from './pages/help/CollobratingCompaign';
+import GettingPaid from "./pages/help/GettingPaid";
 
 const MainLayout = () => (
   <div className="lg:mx-auto lg:max-w-7xl">
@@ -34,6 +39,12 @@ const router = createBrowserRouter([
       { path: "/events", element: <Event /> },
       { path: "/Creator culture podcast", element: <Podcast /> },
       {path:"/how-it-works",element:<Howits />},
+      {path:"/agencies",element:<Agencies />},
+      {path:"/help-center",element:<HelpCenter />},
+      {path:"/connect-your-social-media",element:<ConnectSocialMedia />},
+      {path:'/Opting-in-to-a-Campaign',element:<OtingCompaign />},
+      {path:'/collaborating-on-a-compaign',element:<CollobratingCompaign />},
+      {path:'/getting-paid',element:<GettingPaid />},
       {
         path: "/creator-marketing-summit-north",
         element: <CreatorMarketing />,
