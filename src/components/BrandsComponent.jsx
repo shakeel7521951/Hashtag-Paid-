@@ -66,7 +66,7 @@ const BrandsComponent = () => {
               <li><Link to='/events#on-demand' className="text-[#878683] text-[12px]">On demand</Link></li>
               <li><Link to='/meet-the-creators' className="text-[#878683] text-[12px]">Meet the creators</Link></li>
               <li><Link to='/creator-marketing-summit-north' className="text-[#878683] text-[12px]">Creator Marketing Summit North</Link></li>
-              <li><Link to="/" className="text-[#878683] text-[12px]">Creator Marketing Summit</Link></li>
+              <li><Link to="/creator-marketing-summit" className="text-[#878683] text-[12px]">Creator Marketing Summit</Link></li>
               <li><Link to='/' className="text-black font-bold text-[12px]">CASE STUDIES</Link></li>
               <li><Link to='/education' className="text-[#878683] text-[12px]">Education</Link></li>
               <li><Link to='/' className="text-[#878683] text-[12px]">Tech</Link></li>

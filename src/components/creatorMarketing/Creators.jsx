@@ -80,8 +80,8 @@ const Creators = () => {
     return (
         <div className='bg-[#F2F0EB] mt-7 rounded-[45px] flex flex-col sm:flex-row w-full px-3 mx-auto sm:px-10 py-20' style={{minHeight:'100vh'}}>
             <div className='w-full sm:w-[40%] sm:sticky top-24 mx-auto'>
-                <h1 className='font-custom text-3xl sm:text-5xl'>Speakers</h1>
-                <p className='font-customLight my-4'>
+                <h1 className='font-custom text-3xl sm:text-5xl top-20 sm:sticky'>Speakers</h1>
+                <p className='font-customLight my-4 top-36 sm:sticky'>
                     Industry experts that have an in-depth understanding of creator marketing. These are the leaders you want to learn from!
                 </p>
             </div>

@@ -125,7 +125,7 @@ const CreatorsComponent = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-[#878683] text-[12px]">
+                <Link to="/creator-marketing-summit" className="text-[#878683] text-[12px]">
                   Creator Marketing Summit
                 </Link>
               </li>

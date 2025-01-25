@@ -4,11 +4,11 @@ const Agenda = () => {
   return (
     <div className="mt-7 rounded-[45px] flex flex-col sm:flex-row w-full px-3 sm:px-10 py-20">
       <div className="w-full sm:w-[40%] sm:sticky top-24 mx-auto text-white">
-        <h1 className="font-custom text-3xl sm:text-5xl">Agenda</h1>
-        <p className="font-customLight my-4">
+        <h1 className="font-custom text-3xl sm:text-5xl top-20 sm:sticky">Agenda</h1>
+        <p className="font-customLight top-36 sm:sticky my-4">
           All day agenda for Creator Marketing Summit North, 2024.
         </p>
-        <button className="bg-[#DDE041] rounded-full px-3 py-2 mb-4 text-black">
+        <button className="bg-[#DDE041] rounded-full px-3 py-2 mb-4 top-52 sm:sticky text-black">
           *Agenda is subject to change
         </button>
       </div>
