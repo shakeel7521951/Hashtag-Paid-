@@ -73,27 +73,27 @@ const CreatorsComponent = () => {
                 HELP CENTER
               </li>
               <li>
-                <Link to="/" className="text-[#878683] text-[12px]">
+                <Link to="/help-center" className="text-[#878683] text-[12px]">
                   Getting started
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-[#878683] text-[10px]">
+                <Link to="/connect-your-social-media" className="text-[#878683] text-[10px]">
                   Connecting your social account
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-[#878683] text-[10px]">
+                <Link to="/Opting-in-to-a-Campaign" className="text-[#878683] text-[10px]">
                   Opting in to a campaign
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-[#878683] text-[10px]">
+                <Link to="/collaborating-on-a-compaign" className="text-[#878683] text-[10px]">
                   Collaborating on a campaign
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-[#878683] text-[10px]">
+                <Link to="/getting-paid" className="text-[#878683] text-[10px]">
                   Getting paid
                 </Link>
               </li>
