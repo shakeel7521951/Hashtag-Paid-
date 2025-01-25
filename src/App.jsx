@@ -12,7 +12,6 @@ import AiPrinciples from "./pages/AiPrinciples";
 import Agencies from "./pages/Agencies";
 import Event from "./pages/Event";
 import Howits from "./components/How its work/Howits";
-import Agencies from "./pages/Agencies";
 import HelpCenter from "./pages/help/HelpCenter";
 import ConnectSocialMedia from "./pages/help/ConnectSocialMedia";
 import OtingCompaign from "./pages/help/OptingCompaign";
@@ -49,10 +48,6 @@ const router = createBrowserRouter([
       {
         path: "/creator-marketing-summit-north",
         element: <CreatorMarketing />,
-      },
-      {
-        path: "/agencies",
-        element: <Agencies />,
       },
       {
         path: "/ai-principles",
