@@ -54,12 +54,12 @@ const CreatorsComponent = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-[#878683] text-[12px]">
+                <Link to="/pod-cast" className="text-[#878683] text-[12px]">
                   Creator culture podcast
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-[#878683] text-[12px]">
+                <Link to="/pod-cast" className="text-[#878683] text-[12px]">
                   DTC growth podcast
                 </Link>
               </li>

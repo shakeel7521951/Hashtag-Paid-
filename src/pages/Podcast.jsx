@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import spotify from '../assets/Trusted/spotify.svg';
 export default function Podcast() {
 
@@ -10,7 +11,7 @@ export default function Podcast() {
                     <span className=' text-[#A7A7A7] text-center mb-3 sm:text-xl sm:mb-6'>Luckily, lots of other stuff is.</span>
                     <div className=' w-full mb-10'>
                         <div className=' bg-white w-[150px] md:w-[150px] mx-auto mt-3 cursor-pointer rounded-[30px] hover:bg-gray-400 transition-all ' >
-                            <span className=" text-xs flex justify-center items-center gap-3 text-black md:text-xl p-3 text-center font-bold ">Discover me</span>
+                            <Link to="/" className=" text-xs flex justify-center items-center gap-3 text-black md:text-xl p-3 text-center font-bold ">Discover me</Link>
                         </div>
                     </div>
                 </div>
