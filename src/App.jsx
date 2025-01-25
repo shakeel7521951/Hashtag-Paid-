@@ -9,9 +9,9 @@ import Education from "./pages/Education";
 import CreatorMarketing from "./pages/CreatorMarketing";
 import MeetTheCreators from "./pages/MeetTheCreators";
 import AiPrinciples from "./pages/AiPrinciples";
+import Agencies from "./pages/Agencies";
 import Event from "./pages/Event";
 import Howits from "./components/How its work/Howits";
-import Agencies from "./pages/Agencies";
 import HelpCenter from "./pages/help/HelpCenter";
 import ConnectSocialMedia from "./pages/help/ConnectSocialMedia";
 import OtingCompaign from "./pages/help/OptingCompaign";
@@ -60,7 +60,7 @@ const router = createBrowserRouter([
   { path: "/help-center", element: <HelpCenter /> },
   { path: "/connect-your-social-media", element: <ConnectSocialMedia /> },
   { path: "/Opting-in-to-a-Campaign", element: <OtingCompaign /> },
-  { path: "/collaborating-on-a-compaign", element: <CollobratingCompaign />},
+  { path: "/collaborating-on-a-compaign", element: <CollobratingCompaign /> },
   { path: "/getting-paid", element: <GettingPaid /> },
   { path: '/pod-cast',element:<Podcast />},
   { path: "/login", element: <Login /> },
